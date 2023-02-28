@@ -1,0 +1,90 @@
+main {
+    padding: 1rem;
+}
+
+.notification {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    color: $grayish-blue;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.notification a {
+    font-weight: 800;
+    color: $blue;
+}
+
+.notification img {
+    max-width: 40px;
+    margin-right: 1rem;
+    display: inline-block;
+
+}
+
+.notification-text {
+    width: 100%;
+}
+
+.notification-text p span {
+    font-weight: 800;
+    margin-right: 5px;
+    color: $Very-dark-blue;
+
+}
+
+.notification-date {
+    margin-top: 2px;
+
+}
+
+.notification.unread {
+    background-color: $very-light-grayish-blue;
+}
+
+.notification.unread .notification-text .red-point {
+    width: 7px;
+    height: 7px;
+    background-color: $red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.notification-msg {
+    border: .5px solid $grayish-blue;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: .85rem;
+
+}
+
+.notification-comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-comment img {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 730px;
+        margin: auto;
+
+    }
+
+    .notification {
+        padding: 1rem;
+        margin-bottom: .5rem;
+        font-size: .8rem;
+        color: $grayish-blue;
+        display: flex;
+        border-radius: 10px;
+
+    }
+}

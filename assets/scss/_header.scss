@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.25rem;
+}
+
+header h1 span {
+    background-color: $blue;
+    color: $White;
+    padding: 3px .75rem;
+    border-radius: 5px;
+    font-size: .85rem;
+    margin-left: 7px;
+}
+
+header .mark {
+    font-size: .85rem;
+    color: $grayish-blue;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        max-width: 730px;
+        margin: auto;
+    }
+}

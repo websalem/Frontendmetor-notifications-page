@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+/*Primary Colors*/
+/*Neutral Colors*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(210, 60%, 98%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 730px;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.25rem;
+}
+
+header h1 span {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  padding: 3px 0.75rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  margin-left: 7px;
+}
+
+header .mark {
+  font-size: 0.85rem;
+  color: hsl(219, 14%, 63%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    max-width: 730px;
+    margin: auto;
+  }
+}
+main {
+  padding: 1rem;
+}
+
+.notification {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: hsl(219, 14%, 63%);
+  display: flex;
+  border-radius: 10px;
+}
+
+.notification a {
+  font-weight: 800;
+  color: hsl(219, 85%, 26%);
+}
+
+.notification img {
+  max-width: 40px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.notification-text {
+  width: 100%;
+}
+
+.notification-text p span {
+  font-weight: 800;
+  margin-right: 5px;
+  color: hsl(224, 21%, 14%);
+}
+
+.notification-date {
+  margin-top: 2px;
+}
+
+.notification.unread {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.notification.unread .notification-text .red-point {
+  width: 7px;
+  height: 7px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.notification-msg {
+  border: 0.5px solid hsl(219, 14%, 63%);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.notification-comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-comment img {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 730px;
+    margin: auto;
+  }
+  .notification {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: hsl(219, 14%, 63%);
+    display: flex;
+    border-radius: 10px;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
